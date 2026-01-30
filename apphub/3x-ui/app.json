@@ -1,0 +1,9 @@
+{
+  "name": "3x-ui",
+  "title": "3x-ui 面板",
+  "description": "支持多协议、多用户的 Xray 面板，适配了最新的 Xray 核心。",
+  "version": "latest",
+  "category": "工具",
+  "website": "https://github.com/MHSanaei/3x-ui",
+  "license": "MIT"
+}
