@@ -1,9 +1,75 @@
 {
-  "name": "3x-ui",
-  "title": "3x-ui 面板",
-  "description": "支持多协议、多用户的 Xray 面板，适配了最新的 Xray 核心。",
-  "version": "latest",
-  "category": "工具",
-  "website": "https://github.com/MHSanaei/3x-ui",
-  "license": "MIT"
+  "appid": -1,
+  "appname": "3x-ui",
+  "apptitle": "3x-ui 面板",
+  "apptype": "Network",
+  "appTypeCN": "网络/代理",
+  "appversion": [
+    {
+      "m_version": "latest",
+      "s_version": []
+    }
+  ],
+  "appdesc": "支持多协议、多用户的 Xray 面板，适配了最新的 Xray 核心。",
+  "appstatus": 1,
+  "home": "https://github.com/MHSanaei/3x-ui",
+  "help": "https://github.com/MHSanaei/3x-ui/wiki",
+  "updateat": 1752027587,
+  "depend": null,
+  "field": [
+    {
+      "attr": "domain",
+      "name": "域名",
+      "type": "textarea",
+      "default": "",
+      "suffix": "浏览器访问的域名,非必填",
+      "unit": ""
+    },
+    {
+      "attr": "allow_access",
+      "name": "允许外部访问",
+      "type": "checkbox",
+      "default": true,
+      "suffix": "允许直接通过主机IP+端口访问，如果您设置了域名请不要勾选这里",
+      "unit": ""
+    },
+    {
+      "attr": "web_port",
+      "name": "Web管理端口",
+      "type": "number",
+      "default": 2053,
+      "suffix": "3x-ui 的 Web 管理端口",
+      "unit": ""
+    }
+  ],
+  "env": [
+    {
+      "key": "web_port",
+      "type": "port",
+      "default": null,
+      "desc": "Web管理端口"
+    },
+    {
+      "key": "app_path",
+      "type": "path",
+      "default": null,
+      "desc": "应用数据目录"
+    },
+    {
+      "key": "host_ip",
+      "type": "string",
+      "default": null,
+      "desc": "主机IP"
+    }
+  ],
+  "volumes": {
+    "data": {
+      "type": "path",
+      "desc": "数据目录"
+    },
+    "config": {
+      "type": "path",
+      "desc": "配置文件目录"
+    }
+  }
 }
